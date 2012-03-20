@@ -1,0 +1,70 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository/>
+  <interactiveMode/>
+  <usePluginRegistry/>
+  <offline/>
+  <pluginGroups/>
+  <servers/>
+<mirrors>
+<mirror>
+<id>maven-central</id>
+<url>http://repo1.maven.org/maven2/</url>
+<mirrorOf>*,!eclipselink.repository</mirrorOf>
+</mirror>
+</mirrors>
+ <mirrors>
+  <proxies/>
+<profiles>
+<profile>
+<id>gf-repo</id>
+<repositories>
+<repository>
+<id>maven2-repository.dev.java.net</id>
+<name>Java.net Repository for Maven</name>
+<url>http://download.java.net/maven/2/</url>
+<layout>default</layout>
+<releases>
+<enabled>true</enabled>
+<updatePolicy>always</updatePolicy>
+</releases>
+<snapshots>
+<enabled>true</enabled>
+<updatePolicy>always</updatePolicy>
+</snapshots>
+</repository>
+<repository>
+<id>eclipselink.repository</id>
+<name>EclipseLink Repo</name>
+<releases>
+<enabled>true</enabled>
+<updatePolicy>always</updatePolicy>
+</releases>
+<snapshots>
+<enabled>false</enabled>
+</snapshots>
+<url>http://download.eclipse.org/rt/eclipselink/maven.repo/</url>
+<layout>default</layout>
+</repository>
+<repository>
+<id>netbeans.repository</id>
+<name>Maven Repo containing NetBeans artifacts</name>
+<releases>
+<enabled>true</enabled>
+<updatePolicy>always</updatePolicy>
+</releases>
+<snapshots>
+<enabled>false</enabled>
+</snapshots>
+<url>http://dev.nightlabs.org/maven-repository/repo/</url>
+<layout>default</layout>
+</repository>
+</repositories>
+</profile>
+</profiles>
+<activeProfiles>
+<activeProfile>gf-repo</activeProfile>
+</activeProfiles>
+</settings>

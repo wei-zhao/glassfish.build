@@ -1,0 +1,6 @@
+http://www.java.net/forum/topic/glassfish/glassfish/changes-glassfish-build-instructions
+https://wikis.oracle.com/display/GlassFish/FullBuildInstructions
+mvn scm:checkout -DconnectionUrl=scm:svn:https://svn.java.net/svn/glassfish~svn/trunk/main -DcheckoutDirectory=main
+
+set MAVEN_OPTS=-Xmx512m
+mvn -DskipTests=true clean install
