@@ -4,3 +4,4 @@ mvn scm:checkout -DconnectionUrl=scm:svn:https://svn.java.net/svn/glassfish~svn/
 
 set MAVEN_OPTS=-Xmx512m
 mvn -DskipTests=true clean install
+mvn install -rf :glassfish-osgi
