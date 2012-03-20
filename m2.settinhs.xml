@@ -15,7 +15,7 @@
 <mirrorOf>*,!eclipselink.repository</mirrorOf>
 </mirror>
 </mirrors>
- <mirrors>
+ 
   <proxies/>
 <profiles>
 <profile>
